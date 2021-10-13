@@ -1,0 +1,360 @@
+@import './colors';
+@import './animations';
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    position: relative;
+    font-family: 'Montserrat',
+    sans-serif;
+    background-color: white;
+}
+
+html {
+    scroll-padding-top: 72.5px;
+}
+
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.underline {
+    margin: 0 auto 40px;
+    width: 60px;
+    height: 4px;
+    background-color: $main-color;
+}
+
+.navbar {
+    text-transform: uppercase;
+    z-index: 1;
+    background-color: #fff;
+
+   
+    
+    .navbar-brand {
+        color: $navLinkColor;
+        font-weight: bold;
+    }
+
+    .nav-link {
+        color: $navLinkColor;
+
+    }
+    
+    .fa-cat {
+        padding: 5px;
+    }
+
+    .fa-bars {
+        padding: 10px;
+    }
+
+    a:hover {
+        color: $main-color;
+    }
+
+    .active {
+        color: $main-color;
+    }
+    
+}
+
+
+
+header {
+    color: $main-color;
+
+    h1 {
+        text-transform: uppercase;
+    }
+
+    .hero-img {
+        position: relative;
+        height: 100vh;
+        background-image: url('../img/cat-1723607_640.jpg');
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        z-index: 0;
+    }
+
+    .hero-shadow {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,.8);
+        z-index: -10;
+    }
+
+    .hero-text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+        padding: 10px;
+        text-align: center;
+        z-index: 5;
+        color: white;
+    }
+
+    .btn-outline-light {
+        text-transform: uppercase;
+    }
+
+    .fa-chevron-down {
+        position: absolute;
+        font-size: 30px;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: $main-color;
+    }
+}
+
+.aboutus {
+
+    
+
+    i {
+        margin-top: 20px;
+        font-size: 30px;
+    }
+
+    .aboutus-card-title {
+        text-transform: uppercase;
+        font-size: 18px;
+    }
+
+    .aboutus-card-text {
+        font-size: 14px;
+        
+        
+    }
+    
+
+
+    .aboutus-hover:hover {
+        color: $main-color;
+    }
+
+
+}
+
+.aboutus-hero {
+    position: relative;
+    background-image: url('../img/british-longhair-cat-4872997_640.jpg');
+    background-position: center;
+    background-size: cover;
+    color: #ddd;
+    z-index: 0;
+
+    .aboutus-shadow {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,.7);
+        top: 0;
+        z-index: -5;
+    }
+
+    .aboutus-text {
+        text-transform: uppercase;
+        font-size: 20px;
+    }
+
+    .aboutus-hero-item {
+        margin: 10px 0;
+
+        i {
+            font-size: 36px;
+        }
+    }
+}
+
+.cats  {
+    .carousel-item {
+        height: 600px;
+    }
+    
+    .carousel-caption {
+        position: absolute;
+        background-color: rgba(0,0,0,.8);
+        left: 0;
+        right: 0;
+        padding: 40px 0;
+    }
+
+    .carousel-indicators {
+        padding-bottom: 20px;
+    }
+
+    .card {
+
+        img {
+            height: 300px;
+            object-fit: cover;
+        }
+        
+    }
+}
+
+.breeds {
+    .breed-box {
+        margin: 20px 10px;
+        padding: 30px;
+        background-color: white;
+        box-shadow: 5px 5px 5px rgba(0,0,0,.4);
+        transition: transform.3s;
+
+        h3 {
+            color: $main-color;
+
+        }
+
+        span {
+            font-weight: bold;
+        }
+
+    }
+
+    .breed-box:hover {
+        transform: scale(1.05);
+        margin-left: 53px;
+        margin-right: 53px;
+        box-shadow: 50px 50px 50px rgba(228, 97, 97, 0.3);
+        
+    }
+
+
+    .breeds-info {
+        margin-top: 30px;
+        font-size: 25px;
+
+        a {
+            color: $main-color;
+            text-decoration: none;
+            
+        }
+    }
+}
+
+.gallery{
+    
+    .carousel-item {
+        
+        position: static;
+    }
+
+
+}
+
+.red-text {
+    color: $main-color;
+}
+
+.brief {
+   
+
+    .element {
+        justify-content: center;
+        align-items: center;
+
+        i {
+            padding: 10px;
+            margin-bottom: 20px;
+            font-size: 48px;
+            color: $main-color;
+            text-shadow: 0 0 5px #000;
+        }
+
+        .element-title {
+            font-size: 22px;
+            text-transform: uppercase;
+        }
+
+        p {
+            font-size: 34px;
+        }
+
+    }
+
+    .element-box {
+        padding: 20px 0;
+    }
+
+}
+
+.contact {
+    
+    .contact-text {
+        font-size: 20px;
+        margin-top: 5px;
+    }
+
+    position: relative;
+    background-image: url('../img/cat-1690799_1280.jpg');
+    background-position: center;
+    background-size: cover;
+    color: #ddd;
+    z-index: 0;
+
+}
+
+
+
+
+@media(min-width: 1200px) {
+    header {
+        .hero-img {
+            background-image: url('../img/cat-1723607_1920.jpg');
+        }
+    }
+}
+
+@media(min-width: 992px) {
+    .aboutus-hero {
+        background-image: url('../img/british-longhair-cat-4872997_1920.jpg');
+    }
+
+    .contact {
+        background-image: url('../img/cat-1690799_1920.jpg');
+    }
+}
+
+@media(max-width: 320px) {
+    .navbar-brand {
+        font-size: 16px;
+    }
+}
+
+
+
+@media(min-width: 768px) {
+    .hero-text {
+        h1 {
+            font-size: 40px;
+        }
+
+        p {
+            font-size: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        a {
+            font-size: 20px;
+        }
+    }
+}
+
